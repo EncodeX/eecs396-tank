@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-namespace Assets.Codes {
+﻿namespace Codes {
     /// <summary>
     /// Represents a what platform (e.g. OS) we're running on
     /// </summary>

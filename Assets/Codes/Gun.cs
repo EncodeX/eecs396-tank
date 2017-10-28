@@ -1,7 +1,7 @@
 ﻿using Assets.Codes;
 using UnityEngine;
 
-namespace Assets.Codes {
+namespace Codes {
     public class Gun: MonoBehaviour {
         private const float FireCooldown = 1f;
         private float _lastfire;

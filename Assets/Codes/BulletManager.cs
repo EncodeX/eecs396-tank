@@ -24,11 +24,11 @@ namespace Codes
         }
 
         // TODO fill me in
-        public void ForceSpawn (Vector2 pos, Quaternion rotation, Vector2 velocity, float deathtime) {
+        public void ForceSpawn (Vector2 pos, Quaternion rotation, Vector2 velocity, float deathtime, Color color) {
 
             var shinyBullet = (GameObject)Object.Instantiate(_bullet, pos, rotation,_holder); // cast object as GameObject
             Debug.Log(shinyBullet);
-            shinyBullet.GetComponent<Bullet>().Initialize(velocity,deathtime);  // this is overloaded lol
+            shinyBullet.GetComponent<Bullet>().Initialize(velocity,deathtime, color);  // this is overloaded lol
         }
         
         

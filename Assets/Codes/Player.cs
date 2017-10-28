@@ -1,9 +1,8 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Codes {
     public class Player : MonoBehaviour {
-        private static string _fireaxis;
+        private string _fireaxis;
 
         private Rigidbody2D _rb;
 	    private Gun _gun;
@@ -13,7 +12,7 @@ namespace Codes {
             _rb = GetComponent<Rigidbody2D>();
 		    _gun = GetComponent<Gun>();
 
-            _fireaxis = Platform.GetFireAxis();
+            _fireaxis = Platform.GetFireAxis(gameObject.name);
         }
 
         // Update is called once per frame
@@ -25,7 +24,7 @@ namespace Codes {
             Turn(Input.GetAxis("Horizontal"), Input.GetAxis("Horizontal2"));
             Thrust(Input.GetAxis("Vertical"), Input.GetAxis("Vertical2"));
             if (Input.GetAxis(_fireaxis) > 0.8f) {
-                Fire();
+                Fire(gameObject.GetComponent<SpriteRenderer>().color);
             }
         }
 
@@ -40,16 +39,13 @@ namespace Codes {
         private void Thrust(float intensity1, float intensity2) {
             float intensity = gameObject.name == "Player1" ? intensity1 : intensity2;
             if (Mathf.Abs(intensity) < 0.02f) {
-//                if (Math.Abs(_rb.velocity.magnitude) > 0) {
-//                    _rb.velocity -= _rb.velocity * 0.1f;
-//                }
                 return;
             }
             _rb.AddRelativeForce(Vector2.up * intensity);
         }
 
-        private void Fire() {
-            _gun.Fire();
+        private void Fire(Color color) {
+            _gun.Fire(color);
         }
     }
 }

@@ -11,10 +11,10 @@ namespace Codes
         public const float Lifetime = 7.5f; // bullets last this long
         private float _deathtime;
 
-        public void Initialize (Vector2 velocity, float deathtime) {
+        public void Initialize (Vector2 velocity, float deathtime, Color color) {
             GetComponent<Rigidbody2D>().velocity = velocity;
             _deathtime = deathtime;
-            Debug.Log(velocity);
+            GetComponent<SpriteRenderer>().color=color;
         }
 
         internal void Update () {

@@ -1,4 +1,6 @@
-﻿namespace Codes {
+﻿using UnityEngine;
+
+namespace Codes {
     /// <summary>
     /// Represents a what platform (e.g. OS) we're running on
     /// </summary>
@@ -27,11 +29,18 @@
         /// Returns the name of the platform appropriate input axis for firing.
         /// Windows has a different binding for the right trigger than OSX/Linux.
         /// </summary>
+        /// <param name="playerName"></param>
         /// <returns>Name of the "fire" axis</returns>
-        public static string GetFireAxis() {
-            return GetPlatform() == PlatformType.Windows
-                ? "FireWindows"
-                : "FireMac"; // OSX/Linux bind right trigger the same way
+        public static string GetFireAxis(string playerName) {
+            string result;
+            if (GetPlatform() == PlatformType.Windows) {
+                result = playerName == "Player1" ? "FireWindows" : "FireWindows2";
+            }
+            else {
+                result = playerName == "Player1" ? "FireMac" : "FireMac2";
+            }
+            
+            return result; // OSX/Linux bind right trigger the same way
         }
 
         /// <summary>

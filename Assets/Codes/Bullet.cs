@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 
-namespace Assets.Codes
+
+
+
+namespace Codes
+
 {
     public class Bullet : MonoBehaviour
     {

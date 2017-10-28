@@ -1,13 +1,10 @@
-﻿using System;
+
 using System.Collections.Generic;
-using Assets.Codes;
-using Assets.Codes;
-using NUnit.Framework.Constraints;
-using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Assets.Codes
+namespace Codes
+
 {
     /// <summary>
     /// Bullet manager for spawning and tracking all of the game's bullets

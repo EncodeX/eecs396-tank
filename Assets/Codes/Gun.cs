@@ -1,5 +1,4 @@
-﻿using Assets.Codes;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Codes {
     public class Gun: MonoBehaviour {

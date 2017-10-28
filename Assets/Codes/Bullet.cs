@@ -14,6 +14,7 @@ namespace Codes
         public void Initialize (Vector2 velocity, float deathtime) {
             GetComponent<Rigidbody2D>().velocity = velocity;
             _deathtime = deathtime;
+            Debug.Log(velocity);
         }
 
         internal void Update () {

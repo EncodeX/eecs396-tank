@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Assets.Codes {
+namespace Codes {
     public class Wall: MonoBehaviour {
         private void Update() {
         }

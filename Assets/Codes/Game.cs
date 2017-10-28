@@ -9,7 +9,7 @@ namespace Codes {
         public static Game Ctx;
         
        // public static ScoreManager Score;  // not implemented yet
-        public static Player Player;
+//        public static Player Player;
         
         public static BulletManager Bullets;
 
@@ -20,10 +20,10 @@ namespace Codes {
             Ctx = this;
             
             //Score = GameObject.Find("ScoreText").GetComponent<ScoreManager>();
-            Player = GameObject.Find("Player").GetComponent<Player>();
+//            Player = GameObject.Find("Player").GetComponent<Player>();
             //Asteroids = GameObject.Find("Spawner").GetComponent<AsteroidManager>();
             Bullets = new BulletManager(GameObject.Find("Bullets").transform);
-            Debug.Log(Bullets);
+            Debug.Log("Bullets: " + Bullets);
         }
 
         // all of this is done so that you can save/load with the Start/Back buttons

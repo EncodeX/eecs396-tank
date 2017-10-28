@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using Assets.Codes;
-using Assets.Codes;
-using NUnit.Framework.Constraints;
-using UnityEditor;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Assets.Codes
+namespace Codes
 {
     /// <summary>
     /// Bullet manager for spawning and tracking all of the game's bullets
@@ -28,7 +23,7 @@ namespace Assets.Codes
 
         // TODO fill me in
         public void ForceSpawn (Vector2 pos, Quaternion rotation, Vector2 velocity, float deathtime) {
-
+            Debug.Log("ForceSpawn");
             var shinyBullet = (GameObject)Object.Instantiate(_bullet, pos, rotation,_holder); // cast object as GameObject
 
             shinyBullet.GetComponent<Bullet>().Initialize(velocity,deathtime);  // this is overloaded lol

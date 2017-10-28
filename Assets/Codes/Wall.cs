@@ -20,5 +20,9 @@ namespace Assets.Codes {
             gameObject.GetComponent<EdgeCollider2D>().points = wallVectors;
 //            Debug.Log(left + " " + right + " " + top + " " + bottom);
         }
+        
+        private void OnCollisionEnter2D(Collision2D other) {
+            Debug.Log("OnCollisionEnter2D");
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Assets.Codes;
+using UnityEngine;
 
 namespace Assets.Codes {
     public class Gun: MonoBehaviour {
@@ -10,11 +11,11 @@ namespace Assets.Codes {
             if (time < _lastfire + FireCooldown) { return; }
 
             _lastfire = time;
-//            Game.Bullets.ForceSpawn(
-//                transform.position + transform.up * 0.7f,
-//                transform.rotation,
-//                transform.up * 4f,
-//                time + Bullet.Lifetime);
+            Game.Bullets.ForceSpawn(
+                transform.position + transform.up * 0.7f,
+                transform.rotation,
+                transform.up * 4f,
+                time + Bullet.Lifetime);
             Debug.Log("Shoot");
         }
     }

@@ -34,10 +34,10 @@ namespace Assets.Codes {
             if (Mathf.Abs(direction) < 0.02f) {
                 return;
             }
-            _rb.AddTorque(direction * -0.05f);
+            _rb.AddTorque(direction * -0.4f);
         }
 
-        private void Thrust(float intensity) {
+        private void Thrust(float intensity) { // change this from thrust to acceleration
             if (Mathf.Abs(intensity) < 0.02f) {
 //                Debug.Log("Not Thrusting");
                 return;

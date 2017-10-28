@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
-namespace Assets.Codes {
+namespace Codes {
     public class Player : MonoBehaviour {
         private static string _fireaxis;
 
@@ -23,26 +22,29 @@ namespace Assets.Codes {
         }
 
         private void HandleInput() {
-            Turn(Input.GetAxis("Horizontal"));
-            Thrust(Input.GetAxis("Vertical"));
+            Turn(Input.GetAxis("Horizontal"), Input.GetAxis("Horizontal2"));
+            Thrust(Input.GetAxis("Vertical"), Input.GetAxis("Vertical2"));
             if (Input.GetAxis(_fireaxis) > 0.8f) {
                 Fire();
             }
         }
 
-        private void Turn(float direction) {
+        private void Turn(float direction1, float direction2) {
+            float direction = gameObject.name == "Player1" ? direction1 : direction2;
             if (Mathf.Abs(direction) < 0.02f) {
                 return;
             }
             _rb.AddTorque(direction * -0.4f);
         }
 
-        private void Thrust(float intensity) { // change this from thrust to acceleration
+        private void Thrust(float intensity1, float intensity2) {
+            float intensity = gameObject.name == "Player1" ? intensity1 : intensity2;
             if (Mathf.Abs(intensity) < 0.02f) {
-//                Debug.Log("Not Thrusting");
+//                if (Math.Abs(_rb.velocity.magnitude) > 0) {
+//                    _rb.velocity -= _rb.velocity * 0.1f;
+//                }
                 return;
             }
-//            Debug.Log("Thrusting");
             _rb.AddRelativeForce(Vector2.up * intensity);
         }
 

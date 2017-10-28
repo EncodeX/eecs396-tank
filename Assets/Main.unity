@@ -108,6 +108,102 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &564725798
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4294270246800042, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 5.702711
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294270246800042, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.7439857
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294270246800042, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294270246800042, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294270246800042, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294270246800042, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294270246800042, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294270246800042, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783643090537886, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
+      propertyPath: m_Name
+      value: Player2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294270246800042, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1004678543
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4294270246800042, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -6.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294270246800042, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294270246800042, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294270246800042, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294270246800042, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294270246800042, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294270246800042, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294270246800042, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783643090537886, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
+      propertyPath: m_Name
+      value: Player1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1922094684
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,8 +378,11 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 1, y: 0}
-  - {x: 0, y: 0}
+  - {x: -12.410753, y: -4.869316}
+  - {x: -14.086172, y: 0.08300209}
+  - {x: -11.120881, y: 6.840164}
+  - {x: 9.9943495, y: 6.0066137}
+  - {x: 11.125153, y: -5.5548553}
 --- !u!114 &2117682999
 MonoBehaviour:
   m_ObjectHideFlags: 0

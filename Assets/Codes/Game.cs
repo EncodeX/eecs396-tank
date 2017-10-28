@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Assets.Codes {
+namespace Codes {
     public class Game : MonoBehaviour {
         /// <summary>
         /// The game context.

@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Assets.Codes {
+namespace Codes {
     public class Player : MonoBehaviour {
         private static string _fireaxis;
 
@@ -39,10 +37,8 @@ namespace Assets.Codes {
 
         private void Thrust(float intensity) {
             if (Mathf.Abs(intensity) < 0.02f) {
-//                Debug.Log("Not Thrusting");
                 return;
             }
-//            Debug.Log("Thrusting");
             _rb.AddRelativeForce(Vector2.up * intensity);
         }
 

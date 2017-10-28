@@ -12,6 +12,8 @@ namespace Assets.Codes {
             wallVectors[2] = new Vector2(Screen.height, Screen.width);
             wallVectors[3] = new Vector2(Screen.height, 0f);
             wallVectors[4] = new Vector2(0f, 0f);
+
+            gameObject.GetComponent<EdgeCollider2D>().points = wallVectors;
         }
 
         private void OnCollisionEnter2D(Collision2D other) {

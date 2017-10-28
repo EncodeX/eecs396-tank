@@ -108,48 +108,6 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &1588938509
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4294270246800042, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -8.08209
-      objectReference: {fileID: 0}
-    - target: {fileID: 4294270246800042, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -3.269894
-      objectReference: {fileID: 0}
-    - target: {fileID: 4294270246800042, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4294270246800042, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4294270246800042, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4294270246800042, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4294270246800042, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4294270246800042, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: ff266eccd3e0147b09598135e90dab9a, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1922094684
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,8 +245,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2117682997}
-  - component: {fileID: 2117682999}
   - component: {fileID: 2117682998}
+  - component: {fileID: 2117682999}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -307,7 +265,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &2117682998
 EdgeCollider2D:
@@ -323,7 +281,9 @@ EdgeCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
-  m_Points: []
+  m_Points:
+  - {x: 1, y: 0}
+  - {x: 0, y: 0}
 --- !u!114 &2117682999
 MonoBehaviour:
   m_ObjectHideFlags: 0

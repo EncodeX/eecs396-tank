@@ -51,10 +51,10 @@ namespace Codes {
         private void OnCollisionEnter2D(Collision2D other) {
             if (other.gameObject.name == "Bullet(Clone)") {
                 if (other.gameObject.GetComponent<SpriteRenderer>().color == GetComponent<SpriteRenderer>().color) {
-                    ScoreManager.addScore(gameObject.name == "Player1"? "Player1":"Player2", -1f);
+                    ScoreManager.AddScore(gameObject.name == "Player1"? "Player1":"Player2", -1f);
                 }
                 else {
-                    ScoreManager.addScore(gameObject.name == "Player1"? "Player2":"Player1", 2f);
+                    ScoreManager.AddScore(gameObject.name == "Player1"? "Player2":"Player1", 2f);
                 }
             }
         }

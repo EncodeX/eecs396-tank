@@ -21,10 +21,10 @@ namespace Codes
                 _playerScoreText2 = GetComponent<Text>();
             }
             
-            refreshScore();
+            RefreshScore();
         }
 
-        public static void addScore(string player, float score) {
+        public static void AddScore(string player, float score) {
             if (player == "Player1") {
                 _playerScore1 += score;
             }
@@ -32,10 +32,10 @@ namespace Codes
                 _playerScore2 += score;
             }
             
-            refreshScore();
+            RefreshScore();
         }
 
-        private static void refreshScore() {
+        private static void RefreshScore() {
             if (_playerScoreText1 == null | _playerScoreText2 == null) {
                 return;
             }

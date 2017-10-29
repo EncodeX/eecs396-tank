@@ -34,7 +34,9 @@ namespace Codes {
             if (Mathf.Abs(direction) < 0.02f) {
                 return;
             }
+            Vector2 placeh;
             _rb.AddTorque(direction * -0.05f);
+            //_rb.MovePosition(_rb.position + placeh * Time.fixedDeltaTime);
         }
 
         private void Thrust(float intensity1, float intensity2) {

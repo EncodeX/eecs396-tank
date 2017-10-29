@@ -27,6 +27,7 @@ namespace Codes
 
         private void Die () {
             Destroy(gameObject);
+            Debug.Log("bullet destroyed");
         }
     }
 }

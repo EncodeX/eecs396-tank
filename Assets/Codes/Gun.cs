@@ -5,7 +5,7 @@ namespace Codes {
         private const float FireCooldown = 1f;
         private float _lastfire;
 
-        public void Fire () {
+        public void Fire (Color color) {
             float time = Time.time;
             if (time < _lastfire + FireCooldown) { return; }
 
@@ -14,8 +14,8 @@ namespace Codes {
                 transform.position + transform.up * 0.7f,
                 transform.rotation,
                 transform.up * 4f,
-                time + Bullet.Lifetime);
-            Debug.Log("Shoot");
+                time + Bullet.Lifetime,
+                color);
         }
     }
 }

@@ -46,7 +46,6 @@ namespace Codes
         private void Update() {
             var height = Screen.height;
             var width = Screen.width;
-            Debug.Log(width + " " + height);
             _playerScoreRect1.position = new Vector3(0f, height);
             _playerScoreRect2.position = new Vector3(width, height);
             _playerScoreRect1.sizeDelta = new Vector2(width * .5f, 20f);
